@@ -1,4 +1,4 @@
-FROM andrius/alpine-asterisk:latest
+FROM andrius/asterisk:latest
 
 MAINTAINER jerome.bernard@gmail.com
 
