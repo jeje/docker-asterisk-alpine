@@ -10,11 +10,5 @@ RUN cd /var/lib/asterisk/sounds/fr \
 && wget http://downloads.asterisk.org/pub/telephony/sounds/asterisk-core-sounds-fr-gsm-current.tar.gz \
 && tar xvzf asterisk-core-sounds-fr-gsm-current.tar.gz \
 && rm asterisk-core-sounds-fr-gsm-current.tar.gz \
-#&& wget -O core.zip https://www.asterisksounds.org/fr-fr/download/asterisk-sounds-core-fr-FR-sln16.zip \
-#&& wget -O extra.zip https://www.asterisksounds.org/fr-fr/download/asterisk-sounds-extra-fr-FR-sln16.zip \
-#&& unzip core.zip \
-#&& unzip -o extra.zip \
-#&& rm core.zip \
-#&& rm extra.zip \
 && chown -R asterisk:117 /var/lib/asterisk/sounds/fr \
 && find /var/lib/asterisk/sounds/fr -type d -exec chmod 0775 {} \;
